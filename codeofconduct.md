@@ -1,3 +1,11 @@
+---
+background: '/img/psiicore.png'
+layout: event
+title: "50th Midwest Southeast Photosynthesis Conference"
+home: '/events/TurkeyRun2024'
+description: 'Code of Conduct'
+---
+
 # Code of Conduct
 
 The Midwest/Southeast Photosynthesis Conference is committed to providing a welcoming, inclusive, and harassment-free environment in all interactions regardless of race, age, ethnicity, national origin, language, gender, gender identity, sexual orientation, disability, physical appearance, political views, military service, health status or religion. We welcome the opportunity to bring photosynthesis research to all people regardless of their identity or background.
