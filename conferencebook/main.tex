@@ -1,0 +1,217 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Conference Booklet
+% LaTeX Template
+% Version 1.0 (22/12/2019)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Authors:
+% Maxime Lucas (ml.maximelucas@gmail.com) 
+% Pau Clusella
+% Modifications for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% GNU General Public License v3.0
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+	openany, % Allow chapters to start on odd and even pages
+	parskip=full, % Large space between paragraphs
+	12pt, % Default font size
+	letterpaper, % Paper size, use letterpaper for US letter size
+]{conferencebooklet} % Custom class defining the style and layout of the template
+\usepackage{hyperref}
+\usepackage{newfloat}
+\DeclareFloatingEnvironment[name=talk,fileext=tlk]{talk}
+\DeclareFloatingEnvironment[name=nottalk,fileext=pos]{nottalk}
+\usepackage{multicol}
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	 COVER PAGE
+%----------------------------------------------------------------------------------------
+
+\includepdf{images/cover.pdf} % The cover for the booklet is included as a whole-page image, it can be a PDF or an image file but must be the same dimensions as the paper size
+
+%----------------------------------------------------------------------------------------
+%	 INFORMATION/COPYRIGHT PAGE
+%----------------------------------------------------------------------------------------
+
+\thispagestyle{empty} % Suppress headers and footers on this page
+
+%~\vfill % Push text down
+%
+%\begin{center}	
+%	This is the short version of the booklet for print use. \\ Full abstracts with all authors, references, and figures can be found at:\\ \url{https://amcosconference.com/}
+%	
+%	This template originates from \url{LaTeXTemplates.com} and is based on the original version at:\\ \url{https://github.com/maximelucas/AMCOS\_booklet}
+%\end{center}
+%
+%\newpage
+
+%----------------------------------------------------------------------------------------
+%	 TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+\tableofcontents
+
+%----------------------------------------------------------------------------------------
+%	 ABOUT CONFERENCE
+%----------------------------------------------------------------------------------------
+
+
+
+\includepdf[addtotoc={1,chapter,0,Sponsors,sponsors}]{images/sponsors.pdf}
+
+%----------------------------------------------------------------------------------------
+%	 TIMETABLE
+%----------------------------------------------------------------------------------------
+
+\chapter{Program}
+
+%CT: Contributed Talk, IS: Invited Speaker, KL: Keynote Lecture, IT: Invited Talk.
+
+\section{Friday, October 25}
+
+\begin{longtable}{|C{0.15\linewidth}| C{0.1\linewidth}|  C{0.3\linewidth} C{0.0\linewidth} C{0.4\linewidth}|}\hline	
+	\eventtype{4:00--6:00pm}{Registration and Poster Hanging}
+	\tablebreak{6:00pm}{Dinner}
+	\eventtype{7:30--7:40pm}{Introduction and Welcome}
+	\KL{7:40--8:20pm}{Govindjee}{University of Illinois at Urbana-Champaign}{Photosynthesis: stories from the past}
+	\CT{8:20--8:40pm}{Chris Gisriel}{University of Wisconsin}{\hyperlink{Gisriel.1}{Structure and evolution of Photosystem I in the early-branching cyanobacterium \emph{Anthocerotibacter panamensis}}}
+	\CT{8:40--9:00pm}{Nina Ponomarenko}{Argonne National Laboratory}{\hyperlink{Ponomarenko.1}{Structural analysis of platinum nanoclusters accumulated by 
+		photosystem I photo-reduction via the X-Ray scattering techniques}}
+	\CT{9:00--9:20pm}{Rajnandani Kashyap}{St. Louis University School of Medicine}{\hyperlink{Kashyap.1}{Cryo-EM reveals a bi-copper cluster coordinating asymmetric electron transfer in the nitrogenase-like DPOR complex}}
+	\eventtype{9:30pm}{Mixer and Poster Session}
+\end{longtable}
+
+%------------------------------------------------
+
+\section{Saturday, October 26}
+
+\begin{longtable}{|C{0.15\linewidth}| C{0.1\linewidth}|  C{0.3\linewidth} C{0.0\linewidth} C{0.4\linewidth}|}\hline	
+	\tablebreak{7:00am}{Breakfast}
+	\KL{9:00--9:40am}{Lauren Ann Metskas}{Purdue University}{TBA}
+	\CT{9:40--10:00am}{Rees Rillema}{Michigan State University}{\hyperlink{Rillema.1}{Gas exchanges measurements of carboxysome mutants reveal conditional phenotypes and insights into cyanobacteria carbon concentrating mechanism}}
+	\CT{10:00--10:20am}{Chetna Sharma}{ University of Florida}{\hyperlink{Sharma.1}{KDPG aldolase modulates the photosynthetic carbon yield in Synechococcus elongatus PCC 7942}}
+	\tablebreak{10:20--10:40am}{Coffee}
+	\CT{10:40--11:00am}{Alize\'e Malno\"e}{Indiana University Bloomington}{\hyperlink{Malnoe.1}{qH-energy dissipation in photosystem II antennae}}
+	\CT{11:00--11:20am}{Grant Steiner}{Loyola University Chicago}{\hyperlink{Steiner.1}{Extreme light acclimation reveals inherent photosystem II photoprotection in a natively low-light \emph{Chlorella}}}
+	\CT{11:20--11:40am}{Amala Phadkule}{Purdue University}{\hyperlink{Phadkule.1}{Tuning the low-energy fluorescence state in photosystem II}}
+	\CT{11:40--12:00pm}{Mohamed Elrefaiy}{The University of Texas at Austin}{\hyperlink{Elrefaiy.1}{Computational prediction and experimental validation of pKa shifts in the Q57D mutant of \emph{Lepidium virginicum} WSCP: implications for 
+		tailored chlorophyll protein design	}}
+	\CT{12:00--12:20pm}{Jasleen Bindra}{Argonne National Laboratory}{
+		\hyperlink{Bindra.1}{Coherences of photo-induced electron spin qubit pair states in natural photosynthetic proteins}
+	}
+	\tablebreak{12:30pm}{Lunch}
+	\eventtype{Afternoon}{Free to explore Turkey Run State Park}
+	\eventtype{4:00--6:00pm}{Poster Session}
+	\tablebreak{6:00pm}{Dinner}
+	\KL{7:30--8:10pm}{David Vinyard}{Louisiana State University}{TBA
+	}
+	\CT{8:10--8:30pm}{K. V. Lakshmi}{Rensselaer Polytechnic Institute, New York}{\hyperlink{Lakshmi.1}{Understanding the mechanism of substrate delivery and binding in the oxygen-evolving complex of photosystem II}}
+	\IS{8:30--8:40pm}{Colin Gates}{Loyola University Chicago}{Remembering Jeffery Cameron}
+	\IS{8:40--8:50pm}{Chris Gisriel}{University of Wisconsin}{Remembering Donald Bryant}
+	\eventtype{9:00pm}{50th Anniversary Cake, Campfire, and Poster Session }
+
+	
+\end{longtable}
+
+%------------------------------------------------
+
+\section{Sunday, October 27}
+
+
+\begin{longtable}{|C{0.15\linewidth}| C{0.1\linewidth}|  C{0.3\linewidth} C{0.0\linewidth} C{0.4\linewidth}|}\hline	
+	
+	\tablebreak{7:00am}{Breakfast}
+	\KL{9:00--9:40am}{Wim Vermaas}{Arizona State University}{\hyperlink{Vermaas.1}{50 years of cyanobacteria and photosynthesis}}
+	\CT{9:40--10:00am}{Christopher Jones}{Washington University, St. Louis}{\hyperlink{Jones.1}{ACCESSing the carbon uptake dynamics of cyanobacteria}}
+	\CT{10:00--10:20am}{Harvey Hou}{Alabama State University}{\hyperlink{Hou.1}{Tri-institutional effort to probe cyanobacterial metabolic overflow: 
+		from research to training}
+	}
+	\CT{10:20--10:40am}{Ashraf Mohamed}{The University of Texas at Austin}{
+		\hyperlink{Mohamed.1}{A computational framework for simulating protein organization in thylakoid membranes}
+	}
+	\tablebreak{10:40--11:00am}{Coffee}
+	\eventtype{11:00am}{Awards Presentations}
+\end{longtable}
+
+%----------------------------------------------------------------------------------------
+%	 LIST OF TALK ABSTRACTS
+%----------------------------------------------------------------------------------------
+
+% Abstract template
+%\abstract
+%	{} % Title
+%	{} % Author(s)
+%	{} % Tag, can be: empty, \KLtag (keynote lecture), \IStag (invited speaker), \CTtag (contributed talk) or \ITtag (invited talk)
+%	{} % Affiliation(s)
+%	{} % Abstract text
+
+\chapter{Talk Abstracts}
+\begin{itemize}
+	\input{talkalphabet}
+\end{itemize}
+\input{talkincludes}
+
+%----------------------------------------------------------------------------------------
+%	 LIST OF POSTERS
+%----------------------------------------------------------------------------------------
+
+\chapter{Poster Abstracts} 
+\begin{multicols}{3}
+\begin{itemize}
+	\input{posteralphabet}
+\end{itemize}
+\end{multicols}
+\input{posterincludes}
+ 
+%----------------------------------------------------------------------------------------
+%	 USEFUL INFORMATION
+%----------------------------------------------------------------------------------------
+
+
+\chapter{Useful Information}
+
+The conference will be held at the Turkey Run Inn, just inside Turkey Run State Park in Marshall, Indiana October 25-27.
+\textbf{Meals} will be in the main dining area, near the check-in desk. 
+\textbf{Talks, coffee breaks, and posters} will be in the lower level, past the cozy lobby and down the stairs in the meeting area.
+Forwarned is forarmed, the Wi-Fi can be spotty at Turkey Run, so please be prepared with flash drives to transfer presentations as needed.
+
+\section{Organizing committee}
+
+\begin{center}
+	\begin{tabular}{ll}
+		Sujith Puthiyaveetil (chair)	&		Josh Vermaas (co-chair) \\
+		Department of Biochemistry		&	Plant Research Laboratory \\
+		Purdue University		&			Department of Biochemistry	\\
+		West Lafayette, IN	47907	&			Michigan State University \\
+		spveetil@purdue.edu       		&	vermaasj@msu.edu\\
+		
+	\end{tabular}
+\end{center}
+
+\input{codeofconduct}
+
+%----------------------------------------------------------------------------------------
+%	 CLOSING PAGE
+%----------------------------------------------------------------------------------------
+
+\newpage
+
+\thispagestyle{empty} % Suppress headers and footers on this page
+\pagecolor{myblue} % Coloured background
+~
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
