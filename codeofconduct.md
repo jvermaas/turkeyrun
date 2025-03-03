@@ -1,8 +1,8 @@
 ---
 background: '/img/psiicore.png'
 layout: event
-title: "50th Midwest Southeast Photosynthesis Conference"
-home: '/events/TurkeyRun2024'
+title: "51st Midwest Southeast Photosynthesis Conference"
+home: '/events/TurkeyRun2025'
 description: 'Code of Conduct'
 ---
 
