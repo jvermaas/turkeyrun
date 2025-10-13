@@ -2,7 +2,7 @@ import glob
 
 pdfs = sorted(glob.glob("abstracts/*pdf"),key=str.casefold)
 
-talklastnames = {"Govindjee", "Gisriel", "Ponomarenko", "Kashyap", "Metskas", "Rillema", "Sharma", "Malnoe", "Steiner", "Phadkule", "Elrefaiy", "Bindra", "Vinyard", "Lakshmi", "Vermaas", "Jones", "Hou", "Mohamed"}
+talklastnames = {"Gates", "Ferrari", "Mukherjee", "Fromme", "Brininger", "Vera", "Short", "Emerson", "Damaraju", "Snyder", "Yadav", "Romberger", "Mehra", "Nguyen", "Squires", "Kulkarni", "Sparrowmunoz", "Steiner", "Stewart","Davies-Balogun"}
 talkalphabet = ""
 posteralphabet = ""
 talkincludes = ""
